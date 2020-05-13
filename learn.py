@@ -1,5 +1,2 @@
-print("sanket ")
-print("singhai")
-li=[1,2,3,4]
-for i in li:
-    print(i)
+if __name__ == '__main__':
+    main()    
