@@ -140,7 +140,7 @@ body {
   <div class="leftcolumn">
       <div class="card">
         <h2>COVID 19 India Total Cases </h2>
-        <h5>Last Update, {{result['time']}}</h5>
+        <h5>Last Update, {{t['time']}}</h5>
         <table id="customers">
             <th>Confirmed</th>
             <th>Active</th>
@@ -166,7 +166,7 @@ body {
         <th>Recoverd</th>
         <th>Deaths</th>
         <tbody>
-            {% for segment,j in result['states'].items() %}
+            {% for segment,j in result %}
               <tr>
                 <td>{{segment}}</td>
                 <td>{{ j['confirmed'] }}</td>
